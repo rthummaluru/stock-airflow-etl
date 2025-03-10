@@ -37,8 +37,8 @@ def transform_stock_data(df):
     ### Save Transformed Data
     df_transformed.write.format("csv").mode("overwrite").save("stock_data_transformed.csv")
 
-    return df_transformed
 
+transform_stock_data(stock_df)
 
 
 
